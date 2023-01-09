@@ -7,7 +7,9 @@ const EvaluatorContext = createContext()
 export const EvaluatorProvider = ({ children }) => {
     const initialState = {
         language: 'en',
-        questions: questions.en
+        questions: questions.en,
+        lastPage: Math.ceil(questions.en.length/5),
+        results:[] 
     }
 
     const [state, dispatch] = useReducer(EvaluatorReducer, initialState)

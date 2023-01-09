@@ -152,4 +152,124 @@ header .icons img.active {
 .about .about-grid .item .img-area img {
   width: 160px;
 }
+
+.survey-wrapper {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 24px auto;
+}
+
+.survey-wrapper h3, .survey-wrapper p, .survey-wrapper span {
+  color: #31446c;
+}
+
+.survey-wrapper h3 {
+  font-size: 20px;
+}
+
+.survey-wrapper .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px 0 40px;
+  gap: 5px;
+}
+
+.survey-wrapper .rating li {
+  list-style: none;
+  position: relative;
+  background: #F6F6F6;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.survey-wrapper .rating li label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px #000 solid;
+}
+
+.survey-wrapper .rating li span {
+  display: none;
+  position: absolute;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 130%;
+}
+
+.survey-wrapper .rating li:hover,
+.survey-wrapper .num-display {
+  background: #31446c;
+  color: #fff;
+}
+
+.survey-wrapper .rating li:hover span {
+  display: block;
+}
+
+.survey-wrapper [type='radio'] {
+  opacity: 0;
+}
+
+.survey-wrapper [type='radio']:checked ~ label {
+  background: #31446c;
+  color: #fff;
+}
+
+.survey-wrapper [type='radio']:checked ~ span {
+  display: block;
+}
+
+.survey-wrapper .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 20px;
+}
 /*# sourceMappingURL=style.css.map */

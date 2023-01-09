@@ -3,6 +3,7 @@ import safety from '../assets/img/safety.png'
 import information from '../assets/img/information.png'
 import communication from '../assets/img/communication.png'
 import production from '../assets/img/production.png'
+import { Link } from 'react-router-dom'
 
 function Home() {
     return (
@@ -16,7 +17,7 @@ function Home() {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorem?
                         </p>
                         <div className="hero-btns">
-                            <button className='btn btn-secondary'>Start Survey</button>
+                            <Link to="/survey"><button className='btn btn-secondary'>Start Survey</button></Link>
                             <a href="#about"><button className='btn btn-light'>Learn more</button></a>
                         </div>
                     </div>

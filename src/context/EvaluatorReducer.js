@@ -12,6 +12,7 @@ const EvaluatorReducer = (state, action) => {
                 ...state,
                 results: [...state.results, action.payload]
             }
+
         case 'EDIT_RESULTS':
             const updatedResult = action.payload
             const updatedResults = state.results.map((result) => {
@@ -23,7 +24,12 @@ const EvaluatorReducer = (state, action) => {
             return {
                 ...state,
                 results: updatedResults,
-            };
+            }
+        case 'SORT_RESULTS':
+            return {
+                ...state,
+                results: state.results.sort((x,y)=>x.id > y.id? 1: x.id < y.id? -1 : 0 )
+            }
 
         default:
             return state

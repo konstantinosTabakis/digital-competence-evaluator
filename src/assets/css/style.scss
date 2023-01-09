@@ -156,6 +156,34 @@ header .icons {
         @include flex(flex-end);
         gap: 20px;
     }
-     
+}
+
+.overview{
+    color:  $primary-color;
+    h2{
+        text-align: center;
+    }
+
+    .results{
+        margin: 24px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+    }
+
+    .card{
+        background: #fff;
+        position: relative;
+        padding: 16px;
+        box-shadow: $shadow;
+        border-radius: 4px;
+        img{
+            width: 50px;
+        }
+    }
+    .btn-area{
+        text-align: end;
+        margin-bottom: 24px;
+    }
 
 }

@@ -1,10 +1,13 @@
 import { useContext, useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 import Input from "../components/Input"
 import EvaluatorContext from "../context/EvaluatorContext"
+
 function Survey() {
-    const { questions, lastPage, results } = useContext(EvaluatorContext)
+    const { questions, lastPage, results, dispatch} = useContext(EvaluatorContext)
     const [currentPage, setCurrentPage] = useState(1)
     const [displayQuestions, setDisplayQuestions] = useState([])
+    const navigate = useNavigate()
 
     useEffect(() => {
         setDisplayQuestions(questions.filter((el) => el.id <= currentPage * 5 && el.id > (currentPage - 1) * 5))
@@ -16,13 +19,17 @@ function Survey() {
         } else {
             setCurrentPage(currentPage + 1)
         }
+        window.scrollTo(0, 0)
     }
     const handlePrevious = () => {
         setCurrentPage(currentPage - 1)
+        window.scrollTo(0, 0)
     }
     const handleSubmit = () => {
         if (results.length === questions.length) {
             console.log(results);
+            dispatch({type: 'SORT_RESULTS'}) 
+            navigate('/overview')
         } else {
             alert('Please answer all questions')
         }

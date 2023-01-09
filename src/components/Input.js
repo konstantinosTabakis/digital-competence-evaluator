@@ -14,11 +14,14 @@ function Input({ item }) {
 
     const handleChange = (e) => {
         const type = results.filter((itm)=>itm.id ===item.id).length === 0? 'ADD_RESULT' : 'EDIT_RESULTS'
+        
+        const performance=['N/A','Very Bad','Bad','Medium','Good','Very Good']
         dispatch({type: type, payload: {
             id: item.id,
             title: item.title,
             category: item.category,
-            result: +e.target.value
+            result: +e.target.value,
+            comment: performance[+e.target.value]
         } }) 
         setSelected(+e.target.value)
     }

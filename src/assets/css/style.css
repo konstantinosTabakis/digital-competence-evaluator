@@ -272,4 +272,39 @@ header .icons img.active {
           justify-content: flex-end;
   gap: 20px;
 }
+
+.overview {
+  color: #31446c;
+}
+
+.overview h2 {
+  text-align: center;
+}
+
+.overview .results {
+  margin: 24px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.overview .card {
+  background: #fff;
+  position: relative;
+  padding: 16px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.overview .card img {
+  width: 50px;
+}
+
+.overview .btn-area {
+  text-align: end;
+  margin-bottom: 24px;
+}
 /*# sourceMappingURL=style.css.map */

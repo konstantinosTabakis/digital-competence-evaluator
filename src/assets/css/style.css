@@ -29,6 +29,12 @@ a {
   margin-right: auto;
 }
 
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 0 26px;
+  }
+}
+
 .btn {
   padding: 12px 32px;
   font-size: 16px;
@@ -36,6 +42,13 @@ a {
   border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
 }
 
 .btn:hover {
@@ -117,6 +130,22 @@ header .icons img.active {
   gap: 20px;
 }
 
+@media screen and (max-width: 1100px) {
+  .hero-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-wrapper .hero-img {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
 .about {
   background: #e1e4e5;
   color: #31446c;
@@ -151,6 +180,13 @@ header .icons img.active {
 
 .about .about-grid .item .img-area img {
   width: 160px;
+}
+
+@media screen and (max-width: 600px) {
+  .about .about-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .survey-wrapper {
@@ -273,6 +309,22 @@ header .icons img.active {
   gap: 20px;
 }
 
+@media screen and (max-width: 415px) {
+  .survey-wrapper .rating {
+    margin-bottom: 50px;
+  }
+  .survey-wrapper .rating li {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+  .survey-wrapper .rating li label {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+}
+
 .overview {
   color: #31446c;
 }
@@ -315,6 +367,7 @@ header .icons img.active {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
+  margin-bottom: 24px;
 }
 
 .results-container h2 {
@@ -351,5 +404,17 @@ header .icons img.active {
   font-size: 48px;
   font-weight: 500;
   color: #666af6;
+}
+
+@media screen and (max-width: 650px) {
+  .results-container {
+    padding: 40px 16px;
+  }
+  .results-container .data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

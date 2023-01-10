@@ -32,6 +32,11 @@ a{
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (max-width: 1300px){
+    .container{
+        padding: 0 26px;
+    }
+}
 .btn{
     padding: 12px 32px;
     font-size: 16px;
@@ -39,6 +44,12 @@ a{
     border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
+}
+@media screen and (max-width: 450px){
+    .btn{
+        padding: 12px 28px;
+        font-size: 14px;
+    }
 }
 .btn:hover{
     transform: scale(1.1);

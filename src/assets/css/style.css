@@ -374,6 +374,10 @@ header .icons img.active {
   text-align: center;
 }
 
+.results-container .chart {
+  min-height: 350px;
+}
+
 .results-container .data {
   display: -webkit-box;
   display: -ms-flexbox;

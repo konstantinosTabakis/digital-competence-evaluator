@@ -244,7 +244,9 @@ header .icons {
     h2{
         text-align: center;
     }
-     
+    .chart{
+        min-height: 350px;
+    }
     .data{
         @include flex(center,center);
         gap: 50px;

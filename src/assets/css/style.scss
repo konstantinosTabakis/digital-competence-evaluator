@@ -6,7 +6,7 @@ header .icons {
 
     img {
         width: 35px;
-        margin-right: 20px;
+        margin-right: 24px;
         cursor: pointer;
         border-radius: 50%;
 
@@ -186,4 +186,36 @@ header .icons {
         margin-bottom: 24px;
     }
 
+}
+
+.results-container{
+    color: $primary-color;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: $shadow;
+    border-radius: 12px;
+    h2{
+        text-align: center;
+    }
+    .data{
+        @include flex(center,center);
+        gap: 50px;
+        margin: 56px auto;
+        .groups{
+            font-size: 20px;
+            .itm{
+                margin-bottom: 20px;
+            }
+        }
+        
+        .total{
+            border: 2px solid $secondary-color;
+            border-radius: 50%;
+            padding: 50px;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 500;
+            color: $secondary-color;
+        }
+    }
 }

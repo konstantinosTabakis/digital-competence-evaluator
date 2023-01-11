@@ -4,7 +4,7 @@ import Input from "../components/Input"
 import EvaluatorContext from "../context/EvaluatorContext"
 
 function Survey() {
-    const { questions, lastPage, results, dispatch} = useContext(EvaluatorContext)
+    const { questions, lastPage, results, content, dispatch} = useContext(EvaluatorContext)
     const [currentPage, setCurrentPage] = useState(1)
     const [displayQuestions, setDisplayQuestions] = useState([])
     const navigate = useNavigate()
@@ -46,14 +46,14 @@ function Survey() {
                     {currentPage < lastPage ?
                         <>
                             {currentPage > 1 &&
-                                <button className="btn btn-light" onClick={handlePrevious}>Back</button>
+                                <button className="btn btn-light" onClick={handlePrevious}>{content['previous-btn']}</button>
                             }
-                            <button className="btn btn-primary" onClick={handleNext}>Next</button>
+                            <button className="btn btn-primary" onClick={handleNext}>{content['next-btn']}</button>
                         </>
                         :
                         <>
-                            <button className="btn btn-light" onClick={handlePrevious}>Back</button>
-                            <button className="btn btn-primary" onClick={handleSubmit}>Submit</button>
+                            <button className="btn btn-light" onClick={handlePrevious}>{content['previous-btn']}</button>
+                            <button className="btn btn-primary" onClick={handleSubmit}>{content['submit-btn']}</button>
                         </>
                     }
                 </div>

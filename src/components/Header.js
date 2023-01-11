@@ -4,6 +4,7 @@ import home from '../assets/img/home.png'
 import { useContext, useState } from 'react'
 import EvaluatorContext from '../context/EvaluatorContext'
 import questions from '../data/questions'
+import content from '../data/content'
 import { Link } from 'react-router-dom'
 
 function Header() {
@@ -13,7 +14,7 @@ function Header() {
     // Language change method 
     const handleChange = (e) => {
         setActiveItem(e.target.id)
-        dispatch({ type: 'SET_LANGUAGE', language: e.target.id, questions: questions[e.target.id] })
+        dispatch({ type: 'SET_LANGUAGE', language: e.target.id, questions: questions[e.target.id], content: content[e.target.id] })
     }
 
     return (

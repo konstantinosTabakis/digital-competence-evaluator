@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import EvaluatorContext from "../context/EvaluatorContext"
 
 function Overview() {
-    const { questions, results } = useContext(EvaluatorContext)
+    const { questions, results, content } = useContext(EvaluatorContext)
     const [displayResults, setDisplayResults] = useState([])
     const navigate= useNavigate()
 
@@ -30,7 +30,7 @@ function Overview() {
     return (
         <div className="container">
             <div className="overview">
-                <h2>Overview</h2>
+                <h2>{content['overview-title']} </h2>
                 <div className="results">
                     {displayResults.map((el) => (
                         <div className="card">
@@ -42,7 +42,7 @@ function Overview() {
                     ))}
                 </div>
                 <div className="btn-area">
-                    <button className="btn btn-primary" onClick={handleNavigate}>Generate charts</button>
+                    <button className="btn btn-primary" onClick={handleNavigate}>{content['overview-btn']}</button>
                 </div>
             </div>
         </div>

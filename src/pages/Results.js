@@ -1,26 +1,9 @@
 import { useContext, useEffect, useState } from "react"
 import EvaluatorContext from "../context/EvaluatorContext"
-import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend,
-  } from 'chart.js';
-  import { Bar } from 'react-chartjs-2'; 
-
-  ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend
-  );
+import VerticalBar from "../components/charts/VerticalBar";
+ 
 function Results() {
-    const {results}= useContext(EvaluatorContext)
+    const {results, content}= useContext(EvaluatorContext)
     const [total,setTotal]= useState(0)
     const [totalInf,setTotalInf]= useState(0)
     const [totalCom,setTotalCom]= useState(0)
@@ -28,29 +11,15 @@ function Results() {
     const [totalSaf,setTotalSaf]= useState(0)
     // const categories= ['information','communication','production','safety']
 
-    const data ={
-        labels: ['information','communication','production','safety'],
+    const chartData ={
+        labels: [content['category1'],content['category2'],content['category3'],content['category4']],
         datasets :[{
             data: [totalInf,totalCom,totalProd,totalSaf],
-            // data: [1,2,3,5],
             backgroundColor: ['#666AF6', '#F666B2','#F6F266','#66F6AA']
         },
         ]
     }
-    const options =
-    {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display : false
-          },
-          title: {
-            display: true,
-            text: 'Chart.js Bar Chart',
-          },
-        },
-      };
+     
 
     useEffect(()=>{
         setTotal(findTotal(results))
@@ -72,22 +41,22 @@ function Results() {
     return (
         <div className="container">
             <div className="results-container">
-                <h2>Results</h2>
+                <h2>{content['results-title']}</h2>
                 <div className="data">
                     <div className="groups">
-                        <div className="itm"><span>Information </span> : {totalInf}% </div>
-                        <div className="itm"><span>Communication </span> : {totalCom}% </div>
-                        <div className="itm"><span>Production </span> : {totalProd}% </div>
-                        <div className="itm"><span>Safety </span> : {totalSaf}% </div>
+                        <div className="itm"><span>{content['category1']} </span> : {totalInf}% </div>
+                        <div className="itm"><span>{content['category2']} </span> : {totalCom}% </div>
+                        <div className="itm"><span>{content['category3']} </span> : {totalProd}% </div>
+                        <div className="itm"><span>{content['category4']} </span> : {totalSaf}% </div>
                     </div>
                     <div className="total">
                         <div className="total-inner">
-                            Total <br /> {total}%
+                            {content['results-total']} <br /> {total}%
                         </div>
                     </div>
                 </div>
                 <div className="chart">
-                    <Bar options={options} data={data}/>
+                    <VerticalBar data={chartData}/>
                 </div>
             </div>
         </div>

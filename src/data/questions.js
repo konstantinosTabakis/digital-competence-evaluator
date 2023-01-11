@@ -140,6 +140,18 @@ const questions ={
             category: 'safety',
             example: 'Feel safe when using, for example, credit card details, home address or social security number'
         },
+        {
+            id: 11,
+            title: 'I can do an in-depth search for information and the digital footprints of me and others',
+            category: 'safety',
+            example: 'Know how to search for and find personal data such as profile photo, previous comments, address, job, education etc.'
+        },
+        {
+            id: 12,
+            title: 'I have good strategies for creating and remembering (or saving) passwords',
+            category: 'safety',
+            example: "For example, having a good habit of creating passwords using symbols, numbers, uppercase letters, and without using the name of family or pets"
+        },
          
 
     ]

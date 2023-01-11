@@ -1,12 +1,14 @@
 import { createContext, useReducer } from "react"
 import EvaluatorReducer from "./EvaluatorReducer"
 import questions from '../data/questions'
+import content from "../data/content"
 
 const EvaluatorContext = createContext()
 
 export const EvaluatorProvider = ({ children }) => {
     const initialState = {
         language: 'en',
+        content: content.en,
         questions: questions.en,
         lastPage: Math.ceil(questions.en.length/5),
         results:[] 

@@ -4,8 +4,12 @@ import information from '../assets/img/information.png'
 import communication from '../assets/img/communication.png'
 import production from '../assets/img/production.png'
 import { Link } from 'react-router-dom'
+import EvaluatorContext from '../context/EvaluatorContext'
+import { useContext } from 'react'
 
 function Home() {
+    const {content}= useContext(EvaluatorContext)
+
     return (
         <>
             <div className="container">
@@ -13,12 +17,14 @@ function Home() {
                     <div>
                         <h1 className='hero-title'>Digital Competence Evaluator</h1>
                         <p className="hero-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ullam, mollitia ut ad autem excepturi nam. Itaque, excepturi velit. Accusamus!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorem?
+                            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ullam, mollitia ut ad autem excepturi nam. Itaque, excepturi velit. Accusamus!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorem? */}
+                            {/* The Digital Competence Evaluator's purpose is to provide an overview of digital competences, and offer concrete idea to how these competences can be elevated and improved. */}
+                            {content['hero-text']}
                         </p>
                         <div className="hero-btns">
-                            <Link to="/survey"><button className='btn btn-secondary'>Start Survey</button></Link>
-                            <a href="#about"><button className='btn btn-light'>Learn more</button></a>
+                            <Link to="/survey"><button className='btn btn-secondary'>{content['home-cta-primary']}</button></Link>
+                            <a href="#about"><button className='btn btn-light'>{content['home-cta-secondary']}</button></a>
                         </div>
                     </div>
                     <div>
@@ -29,36 +35,36 @@ function Home() {
             </div>
             <div className="about" id='about'>
                 <div className="container">
-                    <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reiciendis voluptate, consequatur repudiandae ab doloremque adipisci fugiat explicabo ut, sunt amet sapiente dolore molestias mollitia architecto tempore quibusdam soluta aliquid.</p>
+                    <h2>{content['about-title']}</h2>
+                    <p>{content['about-text']}</p>
                     <div className="about-grid">
                         <div className="item">
                             <div className="img-area">
                                 <img src={information} alt="" />
                             </div>
-                            <h4>Information</h4>
-                            <p>Ability to identify, locate, retrieve, store, organise and analyse digital information and evaluate relevance and purpose.</p>
+                            <h4>{content['category1']}</h4>
+                            <p>{content['category1-text']}</p>
                         </div>
                         <div className="item">
                             <div className="img-area">
                                 <img src={communication} alt="" />
                             </div>
-                            <h4>Communication</h4>
-                            <p>Ability to communicate, collaborate, interact with and participate in virtual teams and networks as well as make use of appropriate media, tone and behavior.</p>
+                            <h4>{content['category2']}</h4>
+                            <p>{content['category2-text']}</p>
                         </div>
                         <div className="item">
                             <div className="img-area">
                                 <img src={production} alt="" />
                             </div>
-                            <h4>Production</h4>
-                            <p>Ability to create, configure, and edit digital content, solve digital problems and explore new ways to take advantage of technology.</p>
+                            <h4>{content['category3']}</h4>
+                            <p>{content['category3-text']}</p>
                         </div>
                         <div className="item">
                             <div className="img-area">
                                 <img src={safety} alt="" />
                             </div>
-                            <h4>Safety</h4>
-                            <p>Ability to use digital technology safely and sustainably in relation to data, identity and work injuries and to pay attention to legal consequences, rights and duties.</p>
+                            <h4>{content['category4']}</h4>
+                            <p>{content['category4-text']}</p>
                         </div>
                     </div>
                 </div>

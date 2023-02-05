@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import Input from "../components/Input"
+import ProgressBar from "../components/ProgressBar"
 import EvaluatorContext from "../context/EvaluatorContext"
 
 function Survey() {
@@ -37,6 +38,7 @@ function Survey() {
 
     return (
         <div className="container">
+            <ProgressBar currentPage={currentPage} lastPage={lastPage}/>
             <div className="survey-wrapper">
                 {displayQuestions.map((el) => (
                     <Input key={el.id} item={el} />

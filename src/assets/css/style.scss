@@ -40,15 +40,17 @@ header .icons {
         gap: 20px;
     }
 }
+
 @media screen and (max-width: 1100px) {
     .hero-wrapper {
         flex-direction: column;
-         
+
     }
 }
+
 @media screen and (max-width: 900px) {
     .hero-wrapper {
-        .hero-img{
+        .hero-img {
             max-width: 500px;
             width: 100%;
         }
@@ -92,29 +94,41 @@ header .icons {
         }
     }
 }
+
 @media screen and (max-width: 600px) {
-     .about{
-        .about-grid{
+    .about {
+        .about-grid {
             grid-template-columns: repeat(1, 1fr);
         }
-     }
+    }
 }
 
 
 .survey-wrapper {
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
     padding: 40px;
     box-shadow: $shadow;
     margin: 0 auto 24px;
-    h3,p,span{
+
+    h3,
+    p,
+    span {
         color: $primary-color;
     }
-    h3{
+
+    h3 {
         font-size: 20px
     }
+    .container-question:nth-child(odd){
+        animation: fadiInLeft .8s ease-in-out;
+    }
+    .container-question:nth-child(even){
+        animation: fadiInRight .8s ease-in-out;
+    }
+
     .rating {
-        @include flex(space-around,center);
+        @include flex(space-around, center);
         flex-wrap: wrap;
         margin: 30px 0 40px;
         gap: 5px;
@@ -142,23 +156,25 @@ header .icons {
         padding: 10px;
         border-radius: 50%;
         cursor: pointer;
-        @include flex(center,center);
-         
+        @include flex(center, center);
+
         border: 1px #000 solid;
     }
-    .rating li span{
+
+    .rating li span {
         display: none;
         position: absolute;
         white-space: nowrap;
         @include absolute-center;
-        top: 130%;  
+        top: 130%;
     }
 
     .rating li:hover,
-    .num-display{
+    .num-display {
         background: $primary-color;
         color: #fff;
     }
+
     .rating li:hover span {
         display: block;
         // color: $secondary-color;
@@ -172,93 +188,105 @@ header .icons {
         background: $primary-color;
         color: #fff;
     }
+
     [type='radio']:checked~span {
         display: block;
     }
-    .btns{
+
+    .btns {
         @include flex(flex-end);
         gap: 20px;
     }
 }
 
 @media screen and (max-width: 415px) {
-    .survey-wrapper{
-        .rating{
+    .survey-wrapper {
+        
+        .rating {
             margin-bottom: 50px;
         }
+
         .rating li {
-             
+
             width: 30px;
             height: 30px;
             padding: 10px;
-            
+
         }
-    
+
         .rating li label {
-             
+
             width: 30px;
             height: 30px;
             padding: 10px;
-             
+
         }
     }
 }
 
-.overview{
-    color:  $primary-color;
-    h2{
+.overview {
+    color: $primary-color;
+
+    h2 {
         text-align: center;
     }
 
-    .results{
+    .results {
         margin: 24px auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 40px;
     }
 
-    .card{
+    .card {
         background: #fff;
         position: relative;
         padding: 16px;
         box-shadow: $shadow;
         border-radius: 4px;
-        img{
+
+        img {
             width: 50px;
         }
     }
-    .btn-area{
+
+    .btn-area {
         text-align: end;
         margin-bottom: 24px;
     }
 
 }
 
-.results-container{
+.results-container {
     color: $primary-color;
     background-color: #fff;
     padding: 40px;
     box-shadow: $shadow;
     border-radius: 12px;
     margin-bottom: 24px;
-    h2{
+
+    h2 {
         text-align: center;
     }
-    .chart{
+
+    .chart {
         min-height: 350px;
     }
-    .data{
-        @include flex(center,center);
+
+    .data {
+        @include flex(center, center);
         gap: 50px;
         margin: 56px auto;
-        .groups{
+
+        .groups {
             font-size: 20px;
-            .itm{
+
+            .itm {
                 margin-bottom: 20px;
             }
         }
-        
-        .total{
+
+        .total {
             border: 2px solid $secondary-color;
             border-radius: 50%;
             padding: 50px;
@@ -269,10 +297,12 @@ header .icons {
         }
     }
 }
+
 @media screen and (max-width: 650px) {
-    .results-container{
+    .results-container {
         padding: 40px 16px;
-        .data{
+
+        .data {
             flex-direction: column;
         }
     }
@@ -285,21 +315,55 @@ progress {
     height: 10px;
     border-radius: 12px;
     transition: 2s;
-  }
-  
+}
+
 //   progress {
 //     color: lightblue;
 //   }
-  
+
 //   progress::-moz-progress-bar {
 //     background: lightblue;
 //   }
-  
-  progress::-webkit-progress-value {
+
+progress::-webkit-progress-value {
     background: $primary-color;
     border-radius: 12px;
-  }
-  progress::-webkit-progress-bar {
+}
+
+progress::-webkit-progress-bar {
     background: #f2f0f0;
     border-radius: 12px;
-  }
+}
+
+@keyframes fadiInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    80% {
+        transform: translateX(5px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadiInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    80% {
+        transform: translateX(-5px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

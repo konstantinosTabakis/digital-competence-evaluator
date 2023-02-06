@@ -3,7 +3,7 @@
 header .icons {
     padding: 24px 0;
     .icons-inner{
-        @include flex(end,center);
+        @include flex(flex-end,center);
         a{
             height: 25px;
         }
@@ -276,7 +276,7 @@ header .icons {
     }
 
     .btn-area {
-        @include flex( end, center);
+        @include flex( flex-end, center);
         gap: 20px;
         margin-bottom: 24px;
         flex-wrap: wrap;

@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom"
 import EvaluatorContext from "../context/EvaluatorContext"
 
 function Overview() {
-    const { questions, results, content, performance } = useContext(EvaluatorContext)
+    const { questions, results, content } = useContext(EvaluatorContext)
     const [displayResults, setDisplayResults] = useState([])
     const navigate = useNavigate()
 
@@ -26,6 +26,7 @@ function Overview() {
             setDisplayResults(tempResults)
             console.log(tempResults);
         }
+        // eslint-disable-next-line
     }, [results, questions])
 
     const handleNavigate = () => {

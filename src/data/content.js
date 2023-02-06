@@ -17,9 +17,13 @@ const content = {
         'previous-btn': 'Back',
         'submit-btn': 'Submit',
         'overview-title': 'Overview',
+        'overview-category': 'Category',
+        'overview-response': 'Response',
         'overview-btn': 'Generate Chart',
+        'overview-btn-secondary': 'Back',
         'results-title': 'Results',
-        'results-total': 'Total'
+        'results-total': 'Total',
+        'performance': ['N/A','Very Weak','Weak','Medium','Strong','Very Strong']
     },
     'el':{
         'hero-text': "Ο σκοπός του Digital Competence Evaluator είναι να παρέχει μια επισκόπηση των ψηφιακών ικανοτήτων και να προσφέρει συγκεκριμένη ιδέα για το πώς αυτές οι ικανότητες μπορούν να αυξηθούν και να βελτιωθούν.",
@@ -39,9 +43,13 @@ const content = {
         'previous-btn': 'Πίσω',
         'submit-btn': 'Υποβολή',
         'overview-title': 'Προεπισκόπηση',
+        'overview-category': 'Κατηγορία',
+        'overview-response': 'Απάντηση',
+        'overview-btn-secondary': 'Πίσω',
         'overview-btn':'Δημιουργία Γραφήματος',
         'results-title': 'Αποτελέσματα',
-        'results-total': 'Σύνολο'
+        'results-total': 'Σύνολο',
+        'performance': ['Δ/Α','Έντονη Αδυναμία','Αδυναμία','Μέτρια','Άνεση','Μεγάλη Άνεση']
     }
 }
 

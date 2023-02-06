@@ -23,10 +23,10 @@ function Results() {
 
     useEffect(()=>{
         setTotal(findTotal(results))
-        setTotalInf(findTotal(results.filter((el)=>el.category=== 'information')))
-        setTotalCom(findTotal(results.filter((el)=>el.category=== 'communication')))
-        setTotalProd(findTotal(results.filter((el)=>el.category=== 'production')))
-        setTotalSaf(findTotal(results.filter((el)=>el.category=== 'safety')))
+        setTotalInf(findTotal(results.filter((el)=>el.category=== 'information' || el.category=== 'πληροφορίες' )))
+        setTotalCom(findTotal(results.filter((el)=>el.category=== 'communication' || el.category=== 'επικοινωνία' )))
+        setTotalProd(findTotal(results.filter((el)=>el.category=== 'production' || el.category=== 'παραγωγή' )))
+        setTotalSaf(findTotal(results.filter((el)=>el.category=== 'safety' || el.category=== 'ασφάλεια' )))
         
     },[results])
 

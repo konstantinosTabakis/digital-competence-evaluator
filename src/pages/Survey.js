@@ -3,20 +3,23 @@ import { useNavigate } from "react-router-dom"
 import Input from "../components/Input"
 import ProgressBar from "../components/ProgressBar"
 import EvaluatorContext from "../context/EvaluatorContext"
+import { toast } from "react-toastify"
 
 function Survey() {
-    const { questions, lastPage, results, content, dispatch} = useContext(EvaluatorContext)
+    const { questions, lastPage, results, content,questionsPerPage, dispatch} = useContext(EvaluatorContext)
     const [currentPage, setCurrentPage] = useState(1)
     const [displayQuestions, setDisplayQuestions] = useState([])
     const navigate = useNavigate()
 
     useEffect(() => {
-        setDisplayQuestions(questions.filter((el) => el.id <= currentPage * 5 && el.id > (currentPage - 1) * 5))
+        setDisplayQuestions(questions.filter((el) => el.id <= currentPage * questionsPerPage && el.id > (currentPage - 1) * questionsPerPage))
     }, [questions, currentPage])
 
     const handleNext = () => {
-        if (results.length < currentPage * 5) {
-            alert('Please answer all questions')
+        if (results.length < currentPage * questionsPerPage) {
+            toast.error('Please answer all questions', {
+                position: toast.POSITION.TOP_CENTER
+            })
         } else {
             setCurrentPage(currentPage + 1)
         }
@@ -32,7 +35,10 @@ function Survey() {
             dispatch({type: 'SORT_RESULTS'}) 
             navigate('/overview')
         } else {
-            alert('Please answer all questions')
+            // alert('Please answer all questions')
+            toast.error('Please answer all questions', {
+                position: toast.POSITION.TOP_CENTER
+            })
         }
     }
 

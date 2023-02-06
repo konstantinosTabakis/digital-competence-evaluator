@@ -1,0 +1,150 @@
+{
+    "en": [
+        {
+            "id": 1,
+            "title": "I understand the many advantages and limitations of different storage options",
+            "category": "information",
+            "example": "Knowledge of the pros and cons of storing data in the cloud, on a hard drive or a portable device"
+        },
+        {
+            "id": 2,
+            "title": "I can choose the most appropriate format to store data",
+            "category": "information",
+            "example": "Can format and save a picture in the most appropriate format (for example, JPG, PNG, or raw)"
+        },
+        {
+            "id": 3,
+            "title": "I can make backups and restore data on all relevant digital devices (and have a habit of doing so)",
+            "category": "information",
+            "example": "Can, for example, duplicate important data such as images, address book and documents on the phone, computer and tablet to a safe place."
+        },
+        {
+            "id": 4,
+            "title": "I have a thorough understanding of the effects of communicating through different types of media",
+            "category": "communication",
+            "example": "For example, understanding the various strengths and weaknesses of communication technology such as telephone, email, chat, videoconferencing, SMS"
+        },
+        {
+            "id": 5,
+            "title": "I always evaluate the recipients and carefully tailor the communication accordingly",
+            "category": "communication",
+            "example": "For example, I am good at tailoring languages, slang, image types, colors or multimedia to the recipient"
+        },
+        {
+            "id": 6,
+            "title": "I have an in-depth understanding of how social media enable different forms of communities and democracy",
+            "category": "communication",
+            "example": "Understanding the pros and cons of the internet's possibilities for political debates and sharing political messages. For example, viral media."
+        },
+        {
+            "id": 7,
+            "title": "I can make efficient use of databases to store large amounts of data",
+            "category": "production",
+            "example": "The ability to use databases like Excel, MySQL, Microsoft Access or Oracle to store data when appropriate"
+        },
+        {
+            "id": 8,
+            "title": "I can create content or enhance functionalities through advanced use of programming",
+            "category": "production",
+            "example": "Ability to program in e.g. HTML, C, Java, PHP or Excel macros"
+        },
+        {
+            "id": 9,
+            "title": "I have an overall understanding of the components of a computer and how it is connected to other devices",
+            "category": "production",
+            "example": "Understand the connection between elements such as CPU, RAM, motherboards, cables (e.g. HDMI) and network routers"
+        },
+        {
+            "id": 10,
+            "title": "I feel completely safe when shopping online, using online banking or using public services that require private data",
+            "category": "safety",
+            "example": "Feel safe when using, for example, credit card details, home address or social security number"
+        },
+        {
+            "id": 11,
+            "title": "I can do an in-depth search for information and the digital footprints of me and others",
+            "category": "safety",
+            "example": "Know how to search for and find personal data such as profile photo, previous comments, address, job, education etc."
+        },
+        {
+            "id": 12,
+            "title": "I have good strategies for creating and remembering (or saving) passwords",
+            "category": "safety",
+            "example": "For example, having a good habit of creating passwords using symbols, numbers, uppercase letters, and without using the name of family or pets"
+        }
+    ],
+    "el": [
+        {
+            "id": 1,
+            "title": "Κατανοώ τα πολλά πλεονεκτήματα και τους περιορισμούς των διαφορετικών επιλογών αποθήκευσης",
+            "category": "πληροφορίες",
+            "example": "Γνώση των πλεονεκτημάτων και των μειονεκτημάτων της αποθήκευσης δεδομένων στο cloud, σε σκληρό δίσκο ή φορητή συσκευή"
+        },
+        {
+            "id": 2,
+            "title": "Μπορώ να επιλέξω την καταλληλότερη μορφή για την αποθήκευση δεδομένων",
+            "category": "πληροφορίες",
+            "example": "Μπορώ να μορφοποιήσω και να αποθηκεύσω μια εικόνα στην πιο κατάλληλη μορφή (για παράδειγμα, JPG, PNG ή ακατέργαστη)"
+        },
+        {
+            "id": 3,
+            "title": "Μπορώ να δημιουργήσω αντίγραφα ασφαλείας και να επαναφέρω δεδομένα σε όλες τις σχετικές ψηφιακές συσκευές (και έχω τη συνήθεια να το κάνω)",
+            "category": "πληροφορίες",
+            "example": "Μπορώ, για παράδειγμα, να αντιγράψω σημαντικά δεδομένα όπως εικόνες, βιβλίο διευθύνσεων και έγγραφα στο τηλέφωνο, τον υπολογιστή και το tablet σε ένα ασφαλές μέρος."
+        },
+        {
+            "id": 4,
+            "title": "Έχω πλήρη κατανόηση των επιπτώσεων της επικοινωνίας μέσω διαφορετικών τύπων μέσων",
+            "category": "επικοινωνία",
+            "example": "Για παράδειγμα, η κατανόηση των διαφόρων δυνατών και αδυναμιών της τεχνολογίας επικοινωνίας, όπως τηλέφωνο, email, συνομιλία, τηλεδιάσκεψη, SMS"
+        },
+        {
+            "id": 5,
+            "title": "Πάντα αξιολογώ τους παραλήπτες και προσαρμόζω προσεκτικά την επικοινωνία ανάλογα",
+            "category": "επικοινωνία",
+            "example": "Για παράδειγμα, είμαι καλός στο να προσαρμόζω γλώσσες, αργκό, τύπους εικόνων, χρώματα ή πολυμέσα στον παραλήπτη"
+        },
+        {
+            "id": 6,
+            "title": "Έχω μια εις βάθος κατανόηση του τρόπου με τον οποίο τα μέσα κοινωνικής δικτύωσης επιτρέπουν διαφορετικές μορφές κοινοτήτων και δημοκρατίας",
+            "category": "επικοινωνία",
+            "example": "Κατανόηση των πλεονεκτημάτων και των μειονεκτημάτων των δυνατοτήτων του Διαδικτύου για πολιτικές συζητήσεις και ανταλλαγή πολιτικών μηνυμάτων. Για παράδειγμα, δημοφιλή μέσα"
+        },
+        {
+            "id": 7,
+            "title": "Μπορώ να χρησιμοποιήσω αποτελεσματικά τις βάσεις δεδομένων για την αποθήκευση μεγάλων ποσοτήτων δεδομένων",
+            "category": "παραγωγή",
+            "example": "Η δυνατότητα χρήσης βάσεων δεδομένων όπως το Excel, η MySQL, η Microsoft Access ή η Oracle για την αποθήκευση δεδομένων όταν χρειάζεται"
+        },
+        {
+            "id": 8,
+            "title": "Μπορώ να δημιουργήσω περιεχόμενο ή να βελτιώσω τις λειτουργίες μέσω προηγμένης χρήσης προγραμματισμού",
+            "category": "παραγωγή",
+            "example": "Δυνατότητα προγραμματισμού σε π.χ. Μακροεντολές HTML, C, Java, PHP ή Excel"
+        },
+        {
+            "id": 9,
+            "title": "Έχω μια συνολική κατανόηση των στοιχείων ενός υπολογιστή και του τρόπου σύνδεσης του με άλλες συσκευές",
+            "category": "παραγωγή",
+            "example": "Κατανοήστε τη σύνδεση μεταξύ στοιχείων όπως CPU, RAM, μητρικές πλακέτες, καλώδια (π.χ. HDMI) και δρομολογητές δικτύου"
+        },
+        {
+            "id": 10,
+            "title": "Αισθάνομαι απόλυτα ασφαλής όταν ψωνίζω στο διαδίκτυο, χρησιμοποιώντας ηλεκτρονικές τραπεζικές συναλλαγές ή χρησιμοποιώντας δημόσιες υπηρεσίες που απαιτούν προσωπικά δεδομένα",
+            "category": "ασφάλεια",
+            "example": "Νιώστε ασφαλείς όταν χρησιμοποιείτε, για παράδειγμα, στοιχεία πιστωτικής κάρτας, διεύθυνση κατοικίας ή αριθμό κοινωνικής ασφάλισης"
+        },
+        {
+            "id": 11,
+            "title": "Μπορώ να κάνω μια εις βάθος αναζήτηση για πληροφορίες και τα ψηφιακά αποτυπώματα εμένα και άλλων",
+            "category": "ασφάλεια",
+            "example": "Μάθετε πώς να αναζητάτε και να βρίσκετε προσωπικά δεδομένα όπως φωτογραφία προφίλ, προηγούμενα σχόλια, διεύθυνση, εργασία, εκπαίδευση κλπ"
+        },
+        {
+            "id": 12,
+            "title": "Έχω καλές στρατηγικές για τη δημιουργία και την απομνημόνευση (ή αποθήκευση) κωδικών πρόσβασης",
+            "category": "ασφάλεια",
+            "example": "Για παράδειγμα, να έχετε μια καλή συνήθεια να δημιουργείτε κωδικούς πρόσβασης χρησιμοποιώντας σύμβολα, αριθμούς, κεφαλαία γράμματα και χωρίς να χρησιμοποιείτε το όνομα της οικογένειας ή των κατοικίδιων"
+        }
+    ]
+}

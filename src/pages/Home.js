@@ -8,7 +8,7 @@ import EvaluatorContext from '../context/EvaluatorContext'
 import { useContext } from 'react'
 
 function Home() {
-    const {content}= useContext(EvaluatorContext)
+    const { content } = useContext(EvaluatorContext)
 
     return (
         <>
@@ -17,9 +17,6 @@ function Home() {
                     <div>
                         <h1 className='hero-title'>Digital Competence Evaluator</h1>
                         <p className="hero-text">
-                            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ullam, mollitia ut ad autem excepturi nam. Itaque, excepturi velit. Accusamus!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, dolorem? */}
-                            {/* The Digital Competence Evaluator's purpose is to provide an overview of digital competences, and offer concrete idea to how these competences can be elevated and improved. */}
                             {content['hero-text']}
                         </p>
                         <div className="hero-btns">

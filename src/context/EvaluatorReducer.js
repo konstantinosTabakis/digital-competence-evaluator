@@ -6,7 +6,7 @@ const EvaluatorReducer = (state, action) => {
                 ...state,
                 language: action.language,
                 questions: action.questions,
-                content: action.content
+                content: action.content 
             }
         case 'ADD_RESULT':
             return {

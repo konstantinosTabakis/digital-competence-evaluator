@@ -74,7 +74,26 @@ a {
 
 header .icons {
   padding: 24px 0;
-  text-align: end;
+}
+
+header .icons .icons-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header .icons .icons-inner a {
+  height: 25px;
+}
+
+header .icons .icons-inner .home {
+  width: 25px;
 }
 
 header .icons img {
@@ -282,7 +301,7 @@ header .icons img.active {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 130%;
+  top: 150%;
 }
 
 .survey-wrapper .rating li:hover,
@@ -343,10 +362,12 @@ header .icons img.active {
 
 .overview h2 {
   text-align: center;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 
 .overview .results {
-  margin: 24px auto;
+  margin: 32px auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
@@ -357,19 +378,49 @@ header .icons img.active {
 .overview .card {
   background: #fff;
   position: relative;
-  padding: 16px;
+  padding: 24px 16px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
 
+.overview .card p {
+  margin-bottom: 4px;
+}
+
+.overview .card p .label {
+  font-weight: 600;
+}
+
 .overview .card img {
   width: 50px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background-color: #fff;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.overview .card h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
 }
 
 .overview .btn-area {
-  text-align: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 20px;
   margin-bottom: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .results-container {
@@ -384,6 +435,8 @@ header .icons img.active {
 
 .results-container h2 {
   text-align: center;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 
 .results-container .chart {
@@ -428,9 +481,9 @@ header .icons img.active {
   }
   .results-container .data {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 

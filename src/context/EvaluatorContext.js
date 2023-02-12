@@ -8,7 +8,7 @@ const EvaluatorContext = createContext()
 
 export const EvaluatorProvider = ({ children }) => {
 
-    const questionsPerPage= 5
+    const questionsPerPage= 1
 
     const initialState = {
         language: 'en',
